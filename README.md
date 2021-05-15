@@ -64,4 +64,4 @@ node dist/src/App.js
 # Release History
 
 ## v0.1.0
-- Initial commit.
+- Bot can be activated and deactivated.
