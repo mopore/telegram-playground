@@ -1,13 +1,13 @@
 ```
-    ███        ▄████████   ▄▄▄▄███▄▄▄▄      ▄███████▄  ▄█          ▄████████     ███        ▄████████ 
-▀█████████▄   ███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███ ███         ███    ███ ▀█████████▄   ███    ███ 
-   ▀███▀▀██   ███    █▀  ███   ███   ███   ███    ███ ███         ███    ███    ▀███▀▀██   ███    █▀  
-    ███   ▀  ▄███▄▄▄     ███   ███   ███   ███    ███ ███         ███    ███     ███   ▀  ▄███▄▄▄     
-    ███     ▀▀███▀▀▀     ███   ███   ███ ▀█████████▀  ███       ▀███████████     ███     ▀▀███▀▀▀     
-    ███       ███    █▄  ███   ███   ███   ███        ███         ███    ███     ███       ███    █▄  
-    ███       ███    ███ ███   ███   ███   ███        ███▌    ▄   ███    ███     ███       ███    ███ 
-   ▄████▀     ██████████  ▀█   ███   █▀   ▄████▀      █████▄▄██   ███    █▀     ▄████▀     ██████████ 
-                                                      ▀                                               
+    ███        ▄████████  ▄█          ▄████████    ▄██████▄     ▄████████    ▄████████   ▄▄▄▄███▄▄▄▄   
+▀█████████▄   ███    ███ ███         ███    ███   ███    ███   ███    ███   ███    ███ ▄██▀▀▀███▀▀▀██▄ 
+   ▀███▀▀██   ███    █▀  ███         ███    █▀    ███    █▀    ███    ███   ███    ███ ███   ███   ███ 
+    ███   ▀  ▄███▄▄▄     ███        ▄███▄▄▄      ▄███         ▄███▄▄▄▄██▀   ███    ███ ███   ███   ███ 
+    ███     ▀▀███▀▀▀     ███       ▀▀███▀▀▀     ▀▀███ ████▄  ▀▀███▀▀▀▀▀   ▀███████████ ███   ███   ███ 
+    ███       ███    █▄  ███         ███    █▄    ███    ███ ▀███████████   ███    ███ ███   ███   ███ 
+    ███       ███    ███ ███▌    ▄   ███    ███   ███    ███   ███    ███   ███    ███ ███   ███   ███ 
+   ▄████▀     ██████████ █████▄▄██   ██████████   ████████▀    ███    ███   ███    █▀   ▀█   ███   █▀  
+                         ▀                                     ███    ███                              
 ```
 
 Source for ASCII-fonts: https://www.coolgenerator.com/ascii-text-generator
@@ -16,21 +16,49 @@ Source for ASCII-fonts: https://www.coolgenerator.com/ascii-text-generator
 
 # What is this?
 
-This is template for TypeScript project in VS Code with linting.
+This is a playground project to test the Telegram bot API for the Telegram messenger.
 
 # What's the motivation?
 
-To have an easier start for my projects.
+To test and create own code templates to interact with Telegram.
 
 # Installation
-Just use it as template.
+Retrieve your user ID from Telegram using @userinfobot
+This returns:
+```
+@UserN4me
+Id: 1221881014
+First: Texas Hunter
+```
+
+Create a telegram bot including an access token with the help of @BotFather 
+
+Sample data below:
+
+```
+BotUserName: JniTestBot
+Bot HttpAPI Access Token
+1221881014:aafmHAL53ZAO3PRfW1WSuTq9Oe
+```
+
+Copy the actual data in the project's .env file like this:
+```
+# User ID and token for your Telegram Bot
+USER_ID=1221881014
+APP_TOKEN=1221881014:aafmHAL53ZAO3PRfW1WSuTq9Oe
+
+```
+
+Install and build the project.
+
 ```
 npm install
+npm run build
 ```
 
 # How to use
 ```
-    The code you would write
+node dist/src/App.js
 ```
 
 # Release History
