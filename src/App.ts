@@ -19,7 +19,7 @@ const client = new TelegramClient(TOKEN, {polling: true});
 // The bot messages his owner, that he is back online.
 client.sendMessage(OWNER_ID, "I am back my friend!");
 
-// Allow the only to shutdown its bot by passing the command /exit to the bot's channel
+// Allow only to shutdown by passing the command '/exit' to the bot's channel
 client.onText(/\/exit/, (message, match) => {
     if ( match ){
         // When calling stopPolling the last exit-command will be refetched at the next start.
